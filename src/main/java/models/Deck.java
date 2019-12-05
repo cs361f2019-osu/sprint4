@@ -26,8 +26,8 @@ public class Deck {
         ArrayList<Card> four = new ArrayList<>();
         for (int i = 0; i < 4; i++) {
             if (cards.size() > 0) {
-                four.add(cards.get(i));
-                cards.remove(i);
+                four.add(cards.get(cards.size()-1));
+                cards.remove(cards.size()-1);
             }
         }
         return four;
