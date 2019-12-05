@@ -24,7 +24,7 @@ public class Deck {
 
     public ArrayList<Card> dealFour() {
         ArrayList<Card> four = new ArrayList<>();
-        for (int i = 0; i < 4; i++) {
+        for (int i = 3; i >= 0; i--) {
             if (cards.size() > 0) {
                 four.add(cards.get(i));
                 cards.remove(i);
